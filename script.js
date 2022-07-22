@@ -1,5 +1,6 @@
 // getting lon and lat of user
 function checkGeoLocation(){
+    alert("Please enable your location service.");
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(succssFunction, errorFunction);
     } else{
