@@ -37,6 +37,9 @@ function succssFunction(position){
     }
 
     map.on('click', onMapClick);
+
+    // geocoding
+    L.Control.geocoder().addTo(map);
 };
 
 function errorFunction(){
